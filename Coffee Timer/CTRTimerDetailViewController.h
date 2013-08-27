@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTRTimerModel.h"
 
 @interface CTRTimerDetailViewController : UIViewController
+
+@property (nonatomic, strong) CTRTimerModel *timerModel;
 
 @end

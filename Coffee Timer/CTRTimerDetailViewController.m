@@ -10,6 +10,8 @@
 
 @interface CTRTimerDetailViewController ()
 
+@property (nonatomic, strong) IBOutlet UILabel *durationLabel;
+
 @end
 
 @implementation CTRTimerDetailViewController
@@ -26,7 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    self.title = self.timerModel.coffeeName;
+    
+    self.durationLabel.text = [NSString stringWithFormat:@"%d min %d sec", self.timerModel.duration / 60, self.timerModel.duration % 60];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +39,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

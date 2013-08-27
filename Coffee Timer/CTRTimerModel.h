@@ -10,4 +10,9 @@
 
 @interface CTRTimerModel : NSObject
 
+@property (nonatomic, strong) NSString *coffeeName;
+@property (nonatomic, assign) NSInteger duration;
+
+- (id)initWithCoffeeName:(NSString *)coffeeName duration:(NSInteger)duration;
+
 @end

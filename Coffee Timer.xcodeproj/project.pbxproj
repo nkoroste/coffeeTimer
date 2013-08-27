@@ -18,6 +18,9 @@
 		01B4B94817C7DF53009361E5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4B94717C7DF53009361E5 /* Default-568h@2x.png */; };
 		01B4B94B17C7DF53009361E5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B4B94917C7DF53009361E5 /* MainStoryboard.storyboard */; };
 		01B4B94E17C7DF53009361E5 /* CTRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B94D17C7DF53009361E5 /* CTRViewController.m */; };
+		01B4B95617C8028B009361E5 /* CTRTimerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B95517C8028B009361E5 /* CTRTimerModel.m */; };
+		01B4B95917CBA6FE009361E5 /* CTRTimerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B95817CBA6FD009361E5 /* CTRTimerDetailViewController.m */; };
+		01B4B95E17CBFDF9009361E5 /* CTRTimerEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B95D17CBFDF9009361E5 /* CTRTimerEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		01B4B94A17C7DF53009361E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		01B4B94C17C7DF53009361E5 /* CTRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRViewController.h; sourceTree = "<group>"; };
 		01B4B94D17C7DF53009361E5 /* CTRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRViewController.m; sourceTree = "<group>"; };
+		01B4B95417C8028B009361E5 /* CTRTimerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRTimerModel.h; sourceTree = "<group>"; };
+		01B4B95517C8028B009361E5 /* CTRTimerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRTimerModel.m; sourceTree = "<group>"; };
+		01B4B95717CBA6FD009361E5 /* CTRTimerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRTimerDetailViewController.h; sourceTree = "<group>"; };
+		01B4B95817CBA6FD009361E5 /* CTRTimerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRTimerDetailViewController.m; sourceTree = "<group>"; };
+		01B4B95C17CBFDF9009361E5 /* CTRTimerEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRTimerEditViewController.h; sourceTree = "<group>"; };
+		01B4B95D17CBFDF9009361E5 /* CTRTimerEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRTimerEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +95,8 @@
 				01B4B94017C7DF53009361E5 /* CTRAppDelegate.h */,
 				01B4B94117C7DF53009361E5 /* CTRAppDelegate.m */,
 				01B4B94917C7DF53009361E5 /* MainStoryboard.storyboard */,
-				01B4B94C17C7DF53009361E5 /* CTRViewController.h */,
-				01B4B94D17C7DF53009361E5 /* CTRViewController.m */,
+				01B4B95A17CBCEB2009361E5 /* Models */,
+				01B4B95B17CBCECE009361E5 /* View Controllers */,
 				01B4B93817C7DF53009361E5 /* Supporting Files */,
 			);
 			path = "Coffee Timer";
@@ -105,6 +114,28 @@
 				01B4B94717C7DF53009361E5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01B4B95A17CBCEB2009361E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01B4B95417C8028B009361E5 /* CTRTimerModel.h */,
+				01B4B95517C8028B009361E5 /* CTRTimerModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		01B4B95B17CBCECE009361E5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01B4B94C17C7DF53009361E5 /* CTRViewController.h */,
+				01B4B94D17C7DF53009361E5 /* CTRViewController.m */,
+				01B4B95717CBA6FD009361E5 /* CTRTimerDetailViewController.h */,
+				01B4B95817CBA6FD009361E5 /* CTRTimerDetailViewController.m */,
+				01B4B95C17CBFDF9009361E5 /* CTRTimerEditViewController.h */,
+				01B4B95D17CBFDF9009361E5 /* CTRTimerEditViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +208,9 @@
 				01B4B93E17C7DF53009361E5 /* main.m in Sources */,
 				01B4B94217C7DF53009361E5 /* CTRAppDelegate.m in Sources */,
 				01B4B94E17C7DF53009361E5 /* CTRViewController.m in Sources */,
+				01B4B95617C8028B009361E5 /* CTRTimerModel.m in Sources */,
+				01B4B95917CBA6FE009361E5 /* CTRTimerDetailViewController.m in Sources */,
+				01B4B95E17CBFDF9009361E5 /* CTRTimerEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
